@@ -16,7 +16,7 @@ This is a Django-based API that classifies a given number and returns its mathem
 ```bash
 GET /api/classify-number/?number=371
 
-EXAMPLE RESPONCE 
+## EXAMPLE RESPONCE 
 
 {
     "number": 371,
@@ -27,15 +27,16 @@ EXAMPLE RESPONCE
     "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371"
 }
 
-DEPLOYMENT
+## DEPLOYMENT
 
-The API is deployed at: <your-deployed-url>
+-The API is deployed at: <your-deployed-url>
 
-Technologies Used
-Django
+## Technologies Used
+-Django
 
-Django REST Framework
+-Django REST Framework
 
-Requests (for external API calls)
+-Requests (for external API calls)
 
-Django CORS Headers
+-Django CORS Headers
+
