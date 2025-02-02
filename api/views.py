@@ -37,7 +37,7 @@ def get_fun_fact(n):
 @api_view(['GET'])
 def number_classifier(request):
     """API endpoint to classify a number and return it's properties."""
-    number = requests.GET.get('number')
+    number = request.GET.get('number')
 
     if not number or not number.lstrip('-').isdigit():
         return JsonResponse({"number":number, "error": True}, status=400)
