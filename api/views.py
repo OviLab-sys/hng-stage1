@@ -52,8 +52,8 @@ def number_classifier(request):
         "is_prime":is_prime(number),
         "is_perfect":is_perfect(number),
         "properties": properties,
-        "digit_sum": sum(int(i) for i in str(abs(number))),
-        "fun_fact":get_fun_fact(number)
+        "digit_sum": sum(int(i) for i in str(abs(number))), #"// sum of digits"
+        "fun_fact":get_fun_fact(number) #"// gotten from the numbersapi.com"
     }
 
     return JsonResponse(response_data)
