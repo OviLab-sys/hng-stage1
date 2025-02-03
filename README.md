@@ -1,42 +1,62 @@
 # Number Classification API
 
-This is a Django-based API that classifies a given number and returns its mathematical properties along with a fun fact.
+<p align="center">
+  <img src="https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white" alt="Django">
+  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
+  <img src="https://img.shields.io/badge/REST_API-FF6F61?style=for-the-badge&logo=rest&logoColor=white" alt="REST API">
+</p>
 
-## Features
-- Checks if a number is prime, perfect, or an Armstrong number.
-- Calculates the sum of the digits of the number.
-- Fetches a fun fact about the number from an external API.
-- Handles invalid inputs gracefully.
-- Supports CORS for cross-origin requests.
+<p align="center">
+  <strong>A Django-based API to classify numbers and retrieve their mathematical properties along with fun facts.</strong>
+</p>
 
-## Endpoint
-- **GET** `/api/number_classifier/?number=<number>`
+---
 
-## Example Request
-```bash
-GET /api/number_classifier/?number=371
+## 📖 Table of Contents
+- [Features](#-features)
+- [Technologies Used](#-technologies-used)
+- [Getting Started](#-getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [API Documentation](#-api-documentation)
+  - [Endpoint](#endpoint)
+  - [Example Request](#example-request)
+  - [Example Response](#example-response)
+- [Deployment](#-deployment)
+- [Contributing](#-contributing)
+- [License](#-license)
+- [Acknowledgments](#-acknowledgments)
 
-## EXAMPLE RESPONCE 
+---
 
-{
-    "number": 371,
-    "is_prime": false,
-    "is_perfect": false,
-    "properties": ["armstrong", "odd"],
-    "digit_sum": 11,
-    "fun_fact": "371 is an Armstrong number because 3^3 + 7^3 + 1^3 = 371"
-}
+## 🌟 Features
+- **Number Classification**: Checks if a number is prime, perfect, or an Armstrong number.
+- **Digit Sum**: Calculates the sum of the digits of the number.
+- **Fun Fact**: Fetches a math-related fun fact about the number from the [Numbers API](http://numbersapi.com).
+- **Error Handling**: Gracefully handles invalid inputs and returns appropriate error messages.
+- **CORS Support**: Allows cross-origin requests for seamless integration with frontend applications.
 
-## DEPLOYMENT
+---
 
--The API is deployed at: <your-deployed-url>
+## 🛠 Technologies Used
+- **Backend**: Django, Django REST Framework
+- **External API**: [Numbers API](http://numbersapi.com)
+- **Dependencies**:
+  - `requests`: For making HTTP requests to the Numbers API.
+  - `django-cors-headers`: For handling Cross-Origin Resource Sharing (CORS).
 
-## Technologies Used
--Django
+---
 
--Django REST Framework
+## 🚀 Getting Started
 
--Requests (for external API calls)
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
 
--Django CORS Headers
+### Installation
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/number-api.git
+   cd number-api
 
+<p align="center"> Made with ❤️ by <strong>Victor Oduor(OVI)</strong> </p> 
