@@ -10,11 +10,11 @@ This is a Django-based API that classifies a given number and returns its mathem
 - Supports CORS for cross-origin requests.
 
 ## Endpoint
-- **GET** `/api/classify-number/?number=<number>`
+- **GET** `/api/number_classifier/?number=<number>`
 
 ## Example Request
 ```bash
-GET /api/classify-number/?number=371
+GET /api/number_classifier/?number=371
 
 ## EXAMPLE RESPONCE 
 
