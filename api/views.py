@@ -27,7 +27,7 @@ def is_armstrong(n):
 def get_fun_fact(n):
     """get fun fact about the number."""
     try:
-        response = requests.get(f'http://numbersapi.com/{n}')
+        response = requests.get(f'http://numbersapi.com/{n}/math')
         if response.status_code == 200:
             return response.text.strip()
     except requests.RequestException:
